@@ -1,0 +1,36 @@
+{
+  "Job": {
+    "Region": "global",
+    "ID": "foo",
+    "Name": "foo",
+    "Datacenters": [
+      "dc1"
+    ],
+    "Type": "service",
+    "TaskGroups": [
+      {
+        "Name": "foo",
+        "Tasks": [
+          {
+            "Name": "foo",
+            "Driver": "raw_exec",
+            "Config": {
+              "command": "sleep",
+              "args": [
+                "100000"
+              ]
+            },
+            "Resources": {
+              "CPU": 20,
+              "MemoryMB": 10
+            },
+            "Logs": {
+              "MaxFiles": 3,
+              "MaxFileSizeMB": 10
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
