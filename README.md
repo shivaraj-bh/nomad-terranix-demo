@@ -1,5 +1,7 @@
 # nomad-terranix-demo
 
+terranix module: <https://github.com/shivaraj-bh/nomad-terranix-demo/blob/master/modules/terranix/default.nix>
+
 ## Getting Started
 
 Deploy a nomad server with:
